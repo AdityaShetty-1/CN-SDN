@@ -6,29 +6,29 @@ Project Overview
 The network consists of 3 Open vSwitch switches (s1, s2, s3) connected in a linear topology and 6 hosts (h1 to h6) distributed across the switches. The Ryu controller listens on 127.0.0.1:6633, manages OpenFlow 1.3 communication, installs table-miss and learned unicast flows, and periodically prints a structured flow table report.
 
 Features
-Multi-switch SDN topology in Mininet with deterministic port mapping.
+  .Multi-switch SDN topology in Mininet with deterministic port mapping.
 
-Ryu-based L2 learning switch controller using OpenFlow 1.3.
+  .Ryu-based L2 learning switch controller using OpenFlow 1.3.
 
-Dynamic flow rule installation for known destinations.
+  .Dynamic flow rule installation for known destinations.
 
-Periodic polling of switches using OFPFlowStatsRequest.
+  .Periodic polling of switches using OFPFlowStatsRequest.
 
-Flow classification into:
+  .Flow classification into:
 
-ACTIVE: packet count is at least 1.
+    .ACTIVE: packet count is at least 1.
 
-UNUSED: packet count is 0.
+    .UNUSED: packet count is 0.
 
-Human-readable flow table reports in the Ryu terminal.
+  .Human-readable flow table reports in the Ryu terminal.
 
-Support for optional bandwidth limiting using --bw
+  .Support for optional bandwidth limiting using --bw
 
 
 Technologies Used
-Python 3
-Mininet
-Ryu Controller
+  .Python 3
+  .Mininet
+  .Ryu Controller
 
 
 Files in the Project
