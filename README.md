@@ -1,4 +1,5 @@
 SDN Flow Table Analyzer using Ryu and Mininet
+
 This project implements a Software Defined Networking (SDN) simulation using Mininet and a Ryu OpenFlow 1.3 controller. The controller behaves as an L2 learning switch, installs forwarding rules dynamically, polls switches for flow statistics, and classifies rules as ACTIVE or UNUSED based on packet counters.
 
 Project Overview
